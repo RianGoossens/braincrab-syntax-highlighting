@@ -12,9 +12,6 @@
 			"include": "#character"
 		},
 		{
-			"include": "#letmut"
-		},
-		{
 			"include": "#variable"
 		}
 	],
@@ -27,6 +24,10 @@
 			{
 				"name": "keyword.operator.new.braincrab",
 				"match": "\\b(write|read|print)\\b"
+			},
+			{
+				"name": "storage.modifier.braincrab",
+				"match": "\\b(let|mut)\\b"
 			}]
 		},
 		"strings": {
@@ -43,10 +44,6 @@
 		"character": {
 			"name": "constant.character.escape.braincrab",
 			"match": "'\\\\?.'"
-		},
-		"letmut": {
-			"name": "storage.modifier.braincrab",
-			"match": "\\b(let|mut)\\b"
 		},
 		"variable": {
 			"name": "variable.other.braincrab",
