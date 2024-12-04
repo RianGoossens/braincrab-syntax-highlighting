@@ -1,0 +1,25 @@
+{
+  "name": "braincrab-syntax-highlighting",
+  "displayName": "braincrab-syntax-highlighting",
+  "description": "Syntax Highlighting for BrainCrab",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "braincrab",
+      "aliases": ["BrainCrab", "braincrab"],
+      "extensions": [".bc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "braincrab",
+      "scopeName": "source.braincrab",
+      "path": "./syntaxes/braincrab.tmLanguage.json"
+    }]
+  }
+}

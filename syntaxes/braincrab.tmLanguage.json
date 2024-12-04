@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "BrainCrab",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#character"
+		},
+		{
+			"include": "#letmut"
+		},
+		{
+			"include": "#variable"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.braincrab",
+				"match": "\\b(while|if|else)\\b"
+			},
+			{
+				"name": "keyword.operator.new.braincrab",
+				"match": "\\b(write|read|print)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.braincrab",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.braincrab",
+					"match": "\\\\."
+				}
+			]
+		},
+		"character": {
+			"name": "constant.character.escape.braincrab",
+			"match": "'\\\\?.'"
+		},
+		"letmut": {
+			"name": "storage.modifier.braincrab",
+			"match": "\\b(let|mut)\\b"
+		},
+		"variable": {
+			"name": "variable.other.braincrab",
+			"match": "\\b[a-zA-Z_]+\\b"
+		}
+	},
+	"scopeName": "source.braincrab"
+}
