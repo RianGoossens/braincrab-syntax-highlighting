@@ -13,6 +13,9 @@
 		},
 		{
 			"include": "#variable"
+		},
+		{
+			"include": "#types"
 		}
 	],
 	"repository": {
@@ -26,8 +29,18 @@
 				"match": "\\b(write|read|print)\\b"
 			},
 			{
+				"name": "keyword.other.unit.braincrab",
+				"match": "\\b(true|false)\\b"
+			},
+			{
 				"name": "storage.modifier.braincrab",
 				"match": "\\b(let|mut)\\b"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "entity.name.type.braincrab",
+				"match": "\\b(u8|bool)\\b"
 			}]
 		},
 		"strings": {
