@@ -12,10 +12,10 @@
 			"include": "#character"
 		},
 		{
-			"include": "#variable"
+			"include": "#types"
 		},
 		{
-			"include": "#types"
+			"include": "#variable"
 		}
 	],
 	"repository": {
